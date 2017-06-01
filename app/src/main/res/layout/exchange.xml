@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/status_bar" />
+
+    <com.mdj.moudle.widget.TitleWidget
+        android:id="@+id/titleWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="兑换"
+        />
+
+    <EditText
+        android:id="@+id/etRedeemCode"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag_bg"
+        android:hint="请输入您的兑换码"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black_gray"
+        android:textSize="@dimen/text_size_15"/>
+
+    <Button
+        android:id="@+id/btnRedeem"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="兑换"
+        android:enabled="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:background="@drawable/gray_round_bg"
+        />
+
+
+</LinearLayout>

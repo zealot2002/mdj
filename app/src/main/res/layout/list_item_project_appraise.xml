@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/mdj_back_gauge" >
+
+    <com.mdj.view.roundHead.RoundImageView
+        android:id="@+id/client_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@mipmap/mdj_circle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/client_photo"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/client_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/mdj_txt_pink"
+                android:textSize="@dimen/mdj_title_five" />
+
+            <View
+                android:id="@+id/ha"
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/client_name"
+                android:background="@color/mdj_deep_gray" />
+
+            <TextView
+                android:id="@+id/appraise_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ha"
+                android:text="2015年4月3日"
+                android:textColor="@color/mdj_txt_deep_gray"
+                android:textSize="@dimen/mdj_title_five" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/appraise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="今天看到芝丽瘦了好多，原本就不胖呀！注意身体，别累着"
+            android:textColor="@color/mdj_txt_deep_gray"
+            android:textSize="@dimen/mdj_title_five" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/xuxian" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/beaut_item_appraise_amount" />
+
+            <TextView
+                android:id="@+id/good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/iv_1"
+                android:text="好评"
+                android:textColor="@color/mdj_txt_pink"
+                android:textSize="@dimen/mdj_title_five" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tech_name"
+                android:text="美容师："
+                android:textColor="@color/mdj_txt_deep_gray"
+                android:textSize="@dimen/mdj_title_five" />
+
+            <TextView
+                android:id="@+id/tech_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tech_photo"
+                android:text="丽丽"
+                android:textColor="@color/mdj_txt_deep_gray"
+                android:textSize="@dimen/mdj_title_five" />
+
+            <com.mdj.view.roundHead.RoundImageView
+                android:id="@+id/tech_photo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mdj_circle" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

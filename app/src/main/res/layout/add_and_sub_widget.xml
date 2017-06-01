@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/btnSub"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/sub_icon_selector"
+            android:visibility="gone"
+            />
+        <EditText
+            android:id="@+id/etNum"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_12"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/text_black"
+            android:background="@null"
+            android:maxLength="2"
+            android:editable="false"
+            android:visibility="gone"
+            />
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/add_icon_selector"
+            />
+</LinearLayout>
+

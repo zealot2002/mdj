@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\color\\vpi__dark_theme.xml",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\color\\vpi__dark_theme.xml"
+    },
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\color\\vpi__light_theme.xml",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\color\\vpi__light_theme.xml"
+    }
+]

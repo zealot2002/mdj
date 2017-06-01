@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\vpi__tab_selected_holo.9.png",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable-hdpi\\vpi__tab_selected_holo.9.png"
+    },
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\indicator_arrow.png",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable-hdpi\\indicator_arrow.png"
+    },
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\vpi__tab_selected_pressed_holo.9.png",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable-hdpi\\vpi__tab_selected_pressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\vpi__tab_unselected_pressed_holo.9.png",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable-hdpi\\vpi__tab_unselected_pressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\vpi__tab_unselected_focused_holo.9.png",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable-hdpi\\vpi__tab_unselected_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\vpi__tab_unselected_holo.9.png",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable-hdpi\\vpi__tab_unselected_holo.9.png"
+    },
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\default_ptr_flip.png",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable-hdpi\\default_ptr_flip.png"
+    },
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\vpi__tab_selected_focused_holo.9.png",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable-hdpi\\vpi__tab_selected_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\default_ptr_rotate.png",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable-hdpi\\default_ptr_rotate.png"
+    }
+]

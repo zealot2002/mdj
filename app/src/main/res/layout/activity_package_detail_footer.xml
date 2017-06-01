@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <!--注意事项-->
+    <include layout="@layout/line_without_margin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tvRemarksTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:background="@drawable/black_more_round_bg"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="一 注意事项 一"
+            android:layout_marginTop="28dp"
+            />
+        <TextView
+            android:id="@+id/tvRemarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="12sp"
+            />
+        <include layout="@layout/line_without_margin"/>
+        <RelativeLayout
+            android:id="@+id/rlTips"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/mdj_bg"
+            android:clickable="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="使用及预约方法"
+                android:textColor="@color/text_black"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/arrow_right"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <include layout="@layout/line_without_margin"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="52dp"></View>
+    </LinearLayout>
+</LinearLayout>

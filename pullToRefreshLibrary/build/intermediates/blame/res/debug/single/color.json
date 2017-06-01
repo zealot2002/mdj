@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\debug\\color\\vpi__dark_theme.xml",
+        "source": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\color\\vpi__dark_theme.xml"
+    },
+    {
+        "merged": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/pullToRefreshLibrary/build/intermediates/res/merged/debug/color/vpi__dark_theme.xml",
+        "source": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/pullToRefreshLibrary/src/main/res/color/vpi__dark_theme.xml"
+    },
+    {
+        "merged": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\debug\\color\\vpi__light_theme.xml",
+        "source": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\color\\vpi__light_theme.xml"
+    },
+    {
+        "merged": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/pullToRefreshLibrary/build/intermediates/res/merged/debug/color/vpi__light_theme.xml",
+        "source": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/pullToRefreshLibrary/src/main/res/color/vpi__light_theme.xml"
+    }
+]

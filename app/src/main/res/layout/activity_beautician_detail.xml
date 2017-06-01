@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:TitleWidget="http://schemas.android.com/apk/res-auto"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:zhy="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/mdj_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/status_bar"/>
+
+    <com.mdj.moudle.widget.TitleWidget
+        android:id="@+id/titleWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        TitleWidget:title_text="美容师详情"
+        />
+
+    <include layout="@layout/disconnect"/>
+
+    <include layout="@layout/empty"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!--list-->
+        <ListView
+            android:id="@+id/lvProjectList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="3dp"
+            android:scrollbars="none"
+            android:layout_marginBottom="50dp"
+            />
+        <com.mdj.moudle.widget.TabMenuWidget
+            android:id="@+id/tabMenuLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+        <!--shopCar-->
+        <com.mdj.moudle.widget.shoppingCart.ShoppingCartWidget
+            android:id="@+id/shoppingCartWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+    </FrameLayout>
+
+</LinearLayout>

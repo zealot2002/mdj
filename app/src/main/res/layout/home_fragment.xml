@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:TitleWidget="http://schemas.android.com/apk/res-auto"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/mdj_bg"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical"
+    >
+
+    <com.mdj.view.RefreshableView
+        android:id="@+id/refresh_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ListView
+                android:id="@+id/lvProjectList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:divider="@color/transparent"
+                android:dividerHeight="3dp"
+                android:scrollbars="none"
+                android:layout_marginBottom="50dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <com.mdj.moudle.widget.TitleWidget
+                    android:id="@+id/titleWidget"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:background="@color/transparent"
+                    TitleWidget:title_text="美道家"
+                    />
+
+                <com.mdj.moudle.widget.TabMenuWidget
+                    android:id="@+id/tabMenuLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+
+            <com.mdj.moudle.widget.shoppingCart.ShoppingCartWidget
+                android:id="@+id/shoppingCartWidget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                />
+
+            <ImageButton
+                android:id="@+id/ibtnGoToTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="70dp"
+                android:layout_marginRight="20dp"
+                android:background="@mipmap/go_to_top"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+    </com.mdj.view.RefreshableView>
+</LinearLayout>

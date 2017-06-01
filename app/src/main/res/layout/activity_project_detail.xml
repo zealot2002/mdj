@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:TitleWidget="http://schemas.android.com/apk/res-auto"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:zhy="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/status_bar"/>
+
+    <com.mdj.moudle.widget.TitleWidget
+        android:id="@+id/titleWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        TitleWidget:title_text="项目详情"
+        />
+
+    <include layout="@layout/disconnect"/>
+
+    <include layout="@layout/empty"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <!--list-->
+        <ListView
+            android:id="@+id/lvProjectDetailList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:divider="@color/transparent"
+            android:scrollbars="none"
+            android:layout_marginBottom="50dp"
+            />
+        <!--购买button-->
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="70dp"
+            android:background="@mipmap/add_to_shopcart"
+            />
+        <!--shopCar-->
+        <com.mdj.moudle.widget.shoppingCart.ShoppingCartWidget
+            android:id="@+id/shoppingCartWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+    </FrameLayout>
+</LinearLayout>

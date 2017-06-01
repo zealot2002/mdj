@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdj_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/status_bar" />
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar_mid" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnNoUse"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/round_gray_btn_selector"
+            android:text="不使用优惠券"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/mdj_bg"
+        android:dividerHeight="10dip"
+        android:listSelector="@android:color/transparent"
+        android:padding="17dp"
+        android:scrollbars="none"
+        android:verticalSpacing="10dip" />
+
+    <LinearLayout
+        android:id="@+id/ll_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mdj_bg"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_nodatas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:src="@mipmap/empty" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="暂无优惠券"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

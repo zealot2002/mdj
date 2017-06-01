@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdj_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/status_bar" />
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar_mid" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_white"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:hint="请输入兑换码"
+            android:maxLength="20"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColorHint="#CFCFCF"
+            android:textSize="@dimen/mdj_title_three" />
+
+        <Button
+            android:id="@+id/exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_red_deepred_selector"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="兑换"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mdj_title_three" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/mdj_bg"
+        android:dividerHeight="10dip"
+        android:listSelector="@android:color/transparent"
+        android:padding="17dp"
+        android:scrollbars="none"
+        android:verticalSpacing="10dip" />
+
+    <LinearLayout
+        android:id="@+id/ll_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mdj_bg"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_nodatas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:src="@mipmap/empty" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="暂无优惠券"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

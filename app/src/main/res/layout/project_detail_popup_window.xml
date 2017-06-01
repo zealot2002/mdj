@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <include layout="@layout/disconnect" />
+    
+    <LinearLayout
+        android:id="@+id/llBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+        <!-- 第一部分 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@null" >
+
+            <!-- 图片 -->
+            <com.mdj.view.RoundImageView
+                android:id="@+id/ivImg"
+                android:layout_width="100dp"
+                android:layout_height="67dp"
+                android:background="@color/transparent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/beaut_head" />
+            <!-- 项目名称 -->
+
+            <TextView
+                android:id="@+id/tvProjectName"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:layout_toRightOf="@+id/ivImg"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_12" />
+            <!-- 价格、时长 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ivImg"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/ivImg" >
+
+                <TextView
+                    android:id="@+id/tvSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/symbol_rmb"
+                    android:textColor="@color/red3"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tvSymbol"
+                    android:text=""
+                    android:textColor="@color/red3"
+                    android:textSize="@dimen/text_size_18" />
+
+                <ImageView
+                    android:id="@+id/ivDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_toRightOf="@+id/tvPrice"
+                    android:background="@null"
+                    android:src="@mipmap/time" />
+
+                <TextView
+                    android:id="@+id/tvDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/ivDuration"
+                    android:text=""
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_11"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+            <!-- 关闭按钮 -->
+			<RelativeLayout 
+			    android:id="@+id/rlClose"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:clickable="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+			    >
+			    <ImageButton
+			        android:id="@+id/ibtnClose"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                android:background="@null"
+	                android:src="@mipmap/close"
+	                
+	                />
+			</RelativeLayout>
+            
+        </RelativeLayout>
+        <!-- 第一部分 end -->
+        <!-- 上门、到店按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout
+                android:id="@+id/rlInHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/tag_btn_normal_bg"
+                >
+                <TextView
+                    android:id="@+id/tvInHomeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上门服务"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlToShop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/tag_btn_normal_bg"
+                >
+                <TextView
+                    android:id="@+id/tvToShopText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到店服务"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+            <!-- 上门、到店按钮  end-->
+        </LinearLayout>
+        <EditText
+            android:id="@+id/etServiceRemark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="27dp"
+            android:background="@null"
+            android:text=""
+            android:editable="false"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_14" 
+            android:maxLength="512"
+            />
+
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/red_deep_red_selector"
+            android:text="下单"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

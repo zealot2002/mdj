@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mdj_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/status_bar"/>
+
+
+    <com.mdj.moudle.widget.TitleWidget
+        android:id="@+id/titleWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="关于我们"
+        />
+
+
+    <ImageView
+        android:id="@+id/ivLog"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/mdj_text1"/>
+
+    <TextView
+        android:id="@+id/tvDescrtion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="中国互联网上门美容第一平台"
+        android:gravity="center_vertical"
+        android:textColor="@color/mdj_txt_pink"
+        android:textSize="@dimen/text_size_14"
+        android:layout_below="@+id/ivLog"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDescrtion"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/white_round_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="版本号"
+                android:textColor="@color/orange_yellow"
+                android:textSize="@dimen/text_size_15"/>
+
+            <TextView
+                android:id="@+id/tvVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:layout_toRightOf="@+id/tv1"
+                android:text="V1.0.0"
+                android:textColor="@color/mdj_text_black"
+                android:textSize="@dimen/mdj_title_two"/>
+
+            <TextView
+                android:id="@id/tvCreateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/mdj_text_black"
+                android:textSize="@dimen/text_size_13"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="@dimen/mdj_pading_left"
+            android:layout_marginRight="@dimen/mdj_pading_left"
+            android:background="@color/mdj_black_line"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="官方微信"
+                android:textColor="@color/orange_yellow"
+                android:textSize="@dimen/text_size_15"/>
+
+            <TextView
+                android:id="@+id/tvVX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:text="meidaojia365"
+                android:textColor="@color/mdj_text_black"
+                android:textSize="@dimen/mdj_title_two"/>
+
+            <Button
+                android:id="@+id/btnCopyVX"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/black_round_bg"
+                android:text="复制微信号"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="@dimen/mdj_pading_left"
+            android:layout_marginRight="@dimen/mdj_pading_left"
+            android:background="@color/mdj_black_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="官方网站"
+                android:textColor="@color/orange_yellow"
+                android:textSize="@dimen/text_size_15"/>
+
+            <TextView
+                android:id="@+id/tvWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21dp"
+                android:layout_toRightOf="@+id/tv3"
+                android:autoLink="web"
+                android:textColorLink="@color/mdj_text_black"
+                android:text="http://www.emeidaojia.com"
+                android:textColor="@color/mdj_text_black"
+                android:textSize="@dimen/mdj_title_two"/>
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="@dimen/mdj_pading_left"
+            android:layout_marginRight="@dimen/mdj_pading_left"
+            android:background="@color/mdj_black_line"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rlRecommend"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="介绍我们"
+                android:textColor="@color/orange_yellow"
+                android:textSize="@dimen/text_size_15"/>
+
+            <ImageButton
+                android:id="@+id/ibRecommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:src="@mipmap/right_gray"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:gravity="center|bottom"
+        android:text="亿康美网络科技有限公司版权所有"
+        android:textColor="@color/mdj_txt_deep_gray"
+        android:textSize="@dimen/mdj_title_two"/>
+
+</LinearLayout>

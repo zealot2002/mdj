@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp" 
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent" 
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginTop="15dp"
+    	android:layout_marginBottom="10dp"
+        >
+        <com.mdj.view.RoundImageView 
+            android:id="@+id/ivImg"
+	        android:layout_width="120dp"
+	        android:layout_height="80dp"
+	        android:src="@null"
+	        android:scaleType="fitXY"
+	        />
+        
+        <TextView
+	        android:id="@+id/tvProjectName"
+	        android:layout_toRightOf="@+id/ivImg"
+	        android:layout_marginLeft="15dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="魔力托-霍夫补水"
+	        android:textColor="@color/text_black"
+	        android:textSize="16sp" />
+	
+	    <TextView
+	        android:id="@+id/tvBuyNumText"
+	        android:layout_alignLeft="@+id/tvProjectName"
+	        android:layout_below="@+id/tvProjectName"
+	        android:layout_marginTop="8dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="数量:"
+	        android:textColor="@color/text_gray"
+	        android:textSize="12sp" />
+	    
+	    <TextView
+	        android:id="@+id/tvBuyNum"
+	        android:layout_alignTop="@+id/tvBuyNumText"
+	        android:layout_toRightOf="@+id/tvBuyNumText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="5"
+	        android:textColor="@color/text_gray"
+	        android:textSize="12sp" />
+	    
+	    <TextView
+	        android:id="@+id/tvFreeNumText"
+	        android:layout_alignLeft="@+id/tvProjectName"
+	        android:layout_below="@+id/tvBuyNumText"
+	        android:layout_marginTop="8dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="套餐抵用:"
+	        android:textColor="@color/text_gray"
+	        android:textSize="12sp" />
+	    
+	    <TextView
+	        android:id="@+id/tvFreeNum"
+	        android:layout_alignTop="@+id/tvFreeNumText"
+	        android:layout_toRightOf="@+id/tvFreeNumText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="3"
+	        android:textColor="@color/red"
+	        android:textSize="12sp" />
+	    
+	    <TextView
+	        android:layout_alignTop="@+id/tvFreeNumText"
+	        android:layout_toRightOf="@+id/tvFreeNum"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="次"
+	        android:textColor="@color/text_gray"
+	        android:textSize="12sp" />
+    </RelativeLayout>
+    
+</LinearLayout>

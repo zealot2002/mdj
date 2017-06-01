@@ -1,0 +1,51 @@
+package com.mdj.common;
+
+/*
+ * Date: 14-8-18
+ * Project: Access-Control-V2
+ */
+
+import android.support.v4.view.PagerAdapter;
+import android.util.SparseArray;
+import android.view.View;
+import android.view.ViewGroup;
+
+/**
+ * 抽象的PagerAdapter实现类,封装了内容为View的公共操作.
+ * Author: msdx (645079761@qq.com)
+ * Time: 14-8-18 下午2:34
+ */
+public abstract class AbstractViewPagerAdapter extends PagerAdapter {
+    protected SparseArray<View> viewArray;
+
+    public AbstractViewPagerAdapter() {
+        viewArray = new SparseArray<>();
+    }
+
+    @Override
+    public boolean isViewFromObject(View view, Object object) {
+        return view == object;
+    }
+
+    @Override
+    public Object instantiateItem(ViewGroup container, int position) {
+        View view = viewArray.get(position);
+        if (view == null) {
+            view = newView(position);
+            viewArray.put(position, view);
+        }
+        container.addView(view);
+        return view;
+    }
+
+    public abstract View newView(int position);
+
+
+
+
+    @Override
+    public void destroyItem(ViewGroup container, int position, Object object) {
+        container.removeView(viewArray.get(position));
+    }
+
+}

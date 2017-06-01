@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:TitleWidget="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/mdj_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/status_bar" />
+    <com.mdj.moudle.widget.TitleWidget
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        TitleWidget:title_text="我的套餐"
+        />
+
+    <include layout="@layout/disconnect" />
+    <com.mdj.view.RefreshableView
+        android:id="@+id/refresh_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.tjerkw.slideexpandable.library.ActionSlideExpandableListView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@null"
+                android:divider="@color/transparent"
+                android:dividerHeight="6dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </com.mdj.view.RefreshableView>
+</LinearLayout>

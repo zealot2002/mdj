@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" 
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+         >
+        <TextView
+            android:id="@+id/tvProjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+            android:text="项目名称"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_12" />
+        <Button 
+            android:id="@+id/btnSwitch"
+            android:layout_width="53dp"
+            android:layout_height="25dp"
+            android:text="评价"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tag_normal_bg"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_12"
+            />
+        <LinearLayout
+            android:id="@+id/llRecommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="horizontal" 
+            android:layout_toLeftOf="@+id/btnSwitch"
+            android:layout_marginRight="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tvRecommendProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="已推荐"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_11" 
+                android:paddingRight="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/ivRecommendProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/recommend" />
+        </LinearLayout>
+    </RelativeLayout>
+	<EditText
+        android:id="@+id/etRemarkToProject"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_edittext"
+        android:gravity="top|left"
+        android:hint="请您填写对此项目的评价"
+        android:padding="10dp"
+        android:textColorHint="@color/text_gray"
+        android:textSize="@dimen/text_size_12" 
+        android:textColor="@color/text_black"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

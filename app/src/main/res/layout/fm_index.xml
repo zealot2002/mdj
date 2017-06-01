@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 最上面部分开始 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_title_bar_height" >
+
+        <!-- 按钮slidingmenu -->
+        <!-- 居中logo -->
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="40dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/back_margin_left"
+                android:background="@mipmap/menu_left"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <!-- 居中logo -->
+
+        <com.mdj.view.textView.ChineseTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="预约美容"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_next"
+            android:layout_width="40dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/back_margin_left"
+                android:background="@mipmap/mdj_phone"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 最上面部分结束 -->
+
+</LinearLayout>

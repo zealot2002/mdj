@@ -1,0 +1,240 @@
+<resources>
+
+    <!-- text size -->
+    <dimen name="text_size_9">9sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    
+    
+    <!-- 美道家常量设置 -->
+    <dimen name="mdj_pading_left">20dp</dimen><!-- 左间距 -->
+    <dimen name="mdj_pading_right">20dp</dimen><!-- 右间距 -->    <!-- 美道家字体大小 -->
+    <dimen name="mdj_title_one">17sp</dimen>
+    <dimen name="mdj_title_two">15sp</dimen>
+    <dimen name="mdj_title_three">14sp</dimen>
+    <dimen name="mdj_title_four">13sp</dimen>
+    <dimen name="mdj_title_five">12sp</dimen>
+    <dimen name="mdj_title_six">11sp</dimen>
+    <dimen name="mdj_title_seven">10sp</dimen>
+    <dimen name="mdj_title_price">30sp</dimen>
+    <dimen name="mdj_title_18">18sp</dimen>
+    <dimen name="mdj_title_24">24sp</dimen>
+    <!-- 美道家字体大小 -->
+
+    <dimen name="mdj_guide_button_margin">220dp</dimen>
+
+    <!-- 标题栏高度、底部导航栏高度、登录页面文字条目的高度 -->
+    <dimen name="mdj_title_bar">44dp</dimen>
+    <!-- 左边距、有边距、条目间隔 -->
+    <dimen name="mdj_back_gauge">17dp</dimen>
+    <!-- 状态栏高度 -->
+    <dimen name="mdj_status_bar_height">25dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin_half">8dp</dimen>
+    <dimen name="activity_horizontal_margin_18">18dp</dimen>
+    <dimen name="slidingmenu_cocoa">70dp</dimen>
+    <dimen name="shadow_width">1dp</dimen>
+    <dimen name="main_tabbar_bottom_texs_size">12.0dip</dimen>
+    <dimen name="main_tabbar_bottom_dp">3dip</dimen>
+    <dimen name="main_tabbar_bottom_dp_up">1dip</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="line_height">40dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="button_height45">45dp</dimen>
+    <dimen name="button_margin_h">5dp</dimen>
+    <dimen name="one_half_size">0.5dp</dimen>
+    <!-- 四类字体大小 -->
+
+    <dimen name="micro_text_size">12sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="small_middle_text_size">16sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
+    <!-- 四类字体大小 -->
+
+
+    <!-- listview列表中文字默认字号 -->
+    <dimen name="item_text_size">16sp</dimen>
+    <dimen name="item_little_size">16sp</dimen>
+    <dimen name="key_height">50.0dip</dimen>
+
+    <!-- 标题栏中间大小 -->
+    <dimen name="title_one_mid">20sp</dimen>
+    <!-- 标题栏左右侧文字大小 -->
+    <dimen name="title_one_lr">18sp</dimen>
+    <!-- 标题栏左右侧文字平行间距 -->
+    <dimen name="title_one_marginlr">5dip</dimen>
+
+    <!-- 弹窗使用 -->
+    <dimen name="dialog_title_h">30dip</dimen>
+    <dimen name="dialog_button_text_size">16sp</dimen>
+    <dimen name="dialog_title_size">14sp</dimen>
+    <dimen name="dialog_text_size">12sp</dimen>
+    <!-- 弹窗使用 -->
+
+    <dimen name="home_title_bar_height">58dp</dimen>
+    <dimen name="listview_devider_height">0.5dp</dimen>
+    <dimen name="item_height">56dip</dimen>
+    <dimen name="item_height1">80dip</dimen>
+    <dimen name="item_height_ma">53dip</dimen>
+    <dimen name="segment_height">40dip</dimen>
+
+    <!-- 环信即时通讯 -->
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <!-- 环信即时通讯 -->
+
+    <dimen name="historyscore_tb">10dp</dimen>
+
+    <!-- 优化 -->
+    <!-- 股价 -->
+    <dimen name="stock_detail_price_size">30sp</dimen>
+    <!-- 涨跌幅 -->
+    <dimen name="stock_detail_range_size">13sp</dimen>
+    <!-- 昨开 今收 -->
+    <dimen name="stock_detail_other_size">12sp</dimen>
+    <!-- 一级segment -->
+    <dimen name="one_segment_hei">35dp</dimen>
+    <!-- 二级segment -->
+    <dimen name="two_segment_hei">30dp</dimen>
+    <!-- 三级segment -->
+    <dimen name="three_segment_hei">25dp</dimen>
+    <!-- 一级segment -->
+    <dimen name="one_segment_size">15sp</dimen>
+    <!-- 二级segment -->
+    <dimen name="two_segment_size">12dp</dimen>
+    <!-- 三级segment -->
+    <dimen name="three_segment_size">15dp</dimen>
+
+    <!-- 一级标题字号 -->
+    <dimen name="one_title_size">18sp</dimen>
+    <!-- 二级标题字号 -->
+    <dimen name="two_title_size">12sp</dimen>
+    <!-- 新闻标题字号 -->
+    <dimen name="item_news_title_size">15sp</dimen>
+    <!-- 简单内容字号 -->
+    <dimen name="item_news_content_size">11sp</dimen>
+    <dimen name="timeline_five_detail">10sp</dimen>
+    <dimen name="timeline_five_margin">15dp</dimen>
+    <dimen name="timeline_five_width">89dp</dimen>
+    <dimen name="back_margin_left">16dp</dimen>
+    <dimen name="one_title_icon_bargin">22dp</dimen>
+    <!-- tabbar文字尺寸 -->
+    <dimen name="tabbar_hei">48dp</dimen>
+    <!-- tabbar文字尺寸 -->
+    <dimen name="tabbar_text_size">10sp</dimen>
+
+    <!-- 自选首页大盘总高度 -->
+    <dimen name="dapan_hei">93dp</dimen>
+    <!-- 自选首页大盘文字总高度 -->
+
+
+    <!-- 一级标题栏左右两边文字的字号 -->
+    <dimen name="one_title_rl">15sp</dimen>
+    <dimen name="dapan__one_text_hei">18dp</dimen>
+    <dimen name="dapan_margin">20dp</dimen>
+    <dimen name="dapan_big_size">15sp</dimen>
+    <dimen name="dapan_little_size">12sp</dimen>
+    <dimen name="item_stock_name">18sp</dimen>
+    <dimen name="item_stock_code">9sp</dimen>
+    <dimen name="item_stock_name_hei">22dp</dimen>
+    <dimen name="item_stock_name_code_margin">3dp</dimen>
+    <dimen name="item_stock_code_hei">13dp</dimen>
+    <dimen name="item_stock_price">18sp</dimen>
+    <dimen name="item_stock_rate">15sp</dimen>
+
+    <!-- 刷新 -->
+    <dimen name="pull_top">13sp</dimen>
+    <dimen name="pull_bottom">10sp</dimen>
+    <!-- 刷新 -->
+
+
+    <!-- 环信 -->
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <!-- 环信 -->
+
+
+    <!-- scan -->
+    <dimen name="title_height">48.0dip</dimen>
+    <!-- 加载页面 -->
+    <dimen name="load_margin_top">150dp</dimen>
+
+    <!-- 签到页面 -->
+    <dimen name="sigin_tab_height">80dp</dimen>
+
+    <!-- 登陆页面 -->
+    <dimen name="login_margin_top">110dp</dimen>
+
+    <!-- 页面按钮字体大小 -->
+    <dimen name="btn_text_size">16dp</dimen>
+    <!-- 页面标题字体大小 -->
+    <dimen name="page_caption_text_size">24dp</dimen>
+    <!-- 主界面字体大小 -->
+    <dimen name="homepage_text_size">20dp</dimen>
+    <!-- 页面头部高度 -->
+    <!-- <dimen name="page_top_height">120px</dimen> -->
+    <!-- listview  列表项字体大小 -->
+    <dimen name="list_item_top_text_size">20dp</dimen>
+    <dimen name="list_item_center_text_size">18dp</dimen>
+    <dimen name="list_item_bottom_text_size">16dp</dimen>
+    <!-- 页面Label字体大小 -->
+    <dimen name="label_text_size">16dp</dimen>
+    <!-- 页面Label 内容字体大小 -->
+    <dimen name="label_content_text_size">14dp</dimen>
+    <dimen name="setting_item_height">55dip</dimen>
+
+    <!-- 关于界面 -->
+    <!-- TextView距左边距离 -->
+    <dimen name="as_regards_tv_marginleft">17dp</dimen>
+    <!-- Button距右边距离 -->
+    <dimen name="as_regards_btn_marginright">17dp</dimen>
+    <!-- logo图片的布局距离下面布局的距离marginbottom -->
+    <dimen name="as_regards_layout_of_iv_marginbottom">25dp</dimen>
+    <!-- 布局距离底栏marginbottom -->
+    <dimen name="as_regards_layout_marginbottom">10dp</dimen>
+    <!-- 布局距离栏左边marginbottom -->
+    <dimen name="as_regards_layout_marginleft">7dp</dimen>
+    <!-- 布局距离栏右边marginbottom -->
+    <dimen name="as_regards_layout_marginright">7dp</dimen>
+    <!-- 检查更新、好友推荐、官方网站和官方微博布局高度 -->
+    <dimen name="as_regards_update_recommend_website_microblog_layout_height">55dp</dimen>
+    <!-- scan -->
+    <dimen name="order_detail_item_height">25dp</dimen>
+
+    <!-- button -->
+    <dimen name="cpb_stroke_width">4dp</dimen>
+    <!-- button -->
+
+	<dimen name="home_tab_height">47dp</dimen>
+	
+	<dimen name="bladeview_popup_height">80dp</dimen>
+    <dimen name="bladeview_fontsize">11sp</dimen>
+    <dimen name="bladeview_popup_fontsize">20sp</dimen>
+    <dimen name="selectcity_group_item_padding">10dp</dimen>
+
+<!--首页悬停的间隔-->
+    <dimen name="home_project_category_dp">30dp</dimen>
+    <dimen name="refresh_view_height">70dp</dimen>
+</resources>

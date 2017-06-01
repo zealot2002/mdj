@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdj_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ivStatus"
+        layout="@layout/status_bar"/>
+
+    <!--title-->
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/ivStatus"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ivReturn"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@mipmap/im_left"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="修改个人信息"
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/one_title_size"/>
+
+        <TextView
+            android:id="@+id/tvSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ivReturn"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:text="确定"
+            android:textColor="@color/btn_gray_text_color"
+            android:textSize="@dimen/text_size_15"/>
+
+    </RelativeLayout>
+
+    <!--头像 姓名-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/white_round_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlChangePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="修改头像"
+                android:textColor="@color/orange_yellow"
+                android:textSize="@dimen/text_size_15"/>
+
+
+            <com.mdj.view.RoundImageView
+                android:id="@+id/riUserPhoto"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/default_banner"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvHand"
+                android:layout_toEndOf="@+id/tvHand"
+                android:layout_marginStart="31dp">
+            </com.mdj.view.RoundImageView>
+
+            <TextView
+                android:id="@+id/tvChange"
+                android:layout_width="79dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/riUserPhoto"
+                android:layout_alignLeft="@+id/riUserPhoto"
+                android:layout_alignStart="@+id/riUserPhoto"
+                android:background="@drawable/bottom_left_right_round_bg"
+                android:gravity="center"
+                android:text="点击修改头像"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/mdj_bg"/>
+
+        <RelativeLayout
+            android:id="@+id/grade"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="真实姓名"
+                android:textColor="@color/orange_yellow"
+                android:textSize="@dimen/text_size_15"/>
+
+            <EditText
+                android:id="@+id/etNickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv"
+                android:background="@null"
+                android:clickable="true"
+                android:ems="10"
+                android:hint="请输入昵称"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/black_gray"
+                android:textColorHint="#CFCFCF"
+                android:textSize="@dimen/text_size_15"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--摄像 手机相册-->
+    <LinearLayout
+        android:id="@+id/llChoiceAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_round_bg"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_marginBottom="5dp"
+        >
+
+        <TextView
+            android:id="@+id/photograph"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="拍摄"
+            android:background="@drawable/white_gray_selector"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/mdj_bg"/>
+
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:background="@drawable/white_gray_selector"
+            android:text="从相册选择"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:background="@color/mdj_bg"/>
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="取消"
+            android:background="@drawable/white_gray_selector"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</RelativeLayout>

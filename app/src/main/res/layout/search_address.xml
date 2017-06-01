@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:TitleWidget="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/mdj_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/status_bar" />
+
+    <com.mdj.moudle.widget.TitleWidget
+        android:id="@+id/titleWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        TitleWidget:title_text="设置地址"
+        />
+
+    <!--搜索框-->
+    <LinearLayout
+        android:id="@+id/llInputSearch"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/white_round_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/search"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+        <com.mdj.view.ClearEditText
+            android:id="@+id/etKeyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:drawableRight="@drawable/delete_selector"
+            android:hint="搜索您的地址"
+            android:textColorHint="#cccccc"
+            android:textSize="13sp"
+            android:textColor="@color/text_black"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <!--搜索结果-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/white_round_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/location1"
+                />
+            <TextView
+                android:id="@+id/tvResultType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="当前位置"
+                android:textSize="13sp"
+                android:textColor="@color/text_gray"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+        <include layout="@layout/line"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.mdj.view.MyListView
+                    android:id="@+id/lvSearchResultList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#dadada"
+                    android:dividerHeight="1px"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scrollbars="none"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rlEmpty"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/search_empty"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<LinearLayout xmlns:TitleWidget="http://schemas.android.com/apk/res-auto"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/mdj_bg"
+              android:orientation="vertical"
+    >
+    <!--上半部-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/white_round_bg"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <!-- 图片 -->
+            <com.mdj.view.RoundImageView
+                android:id="@+id/ivImg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/transparent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/beaut_head"
+                />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/ivImg"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/tvOrderNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="27dp"
+                android:layout_toRightOf="@+id/ivImg"
+                android:text=""
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                />
+
+            <ImageButton
+                android:id="@+id/btnPhone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/phone"
+                android:background="@color/transparent"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvIntruduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textColor="#787878"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textColor="#787878"
+            android:textSize="13sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/package_bg"
+            >
+
+            <ImageButton
+                android:id="@+id/btnPackage"
+                android:layout_width="66dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/package_button_selector"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

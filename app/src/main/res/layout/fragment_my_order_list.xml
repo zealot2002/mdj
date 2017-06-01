@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:TitleWidget="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/mdj_bg"
+              android:orientation="vertical"
+            android:layout_marginBottom="50dp"
+    >
+
+    <include layout="@layout/status_bar" />
+
+    <com.mdj.moudle.widget.TitleWidget
+        android:id="@+id/titleWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        TitleWidget:title_text="我的订单"
+        />
+
+    <com.mdj.view.RefreshableView
+        android:id="@+id/refresh_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_nav"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/white_round_bg" >
+
+                <RadioGroup
+                    android:id="@+id/rgNav"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:orientation="horizontal" >
+
+                </RadioGroup>
+                <ImageView
+                    android:id="@+id/ivNav"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:background="#535353"
+                    android:layout_alignParentBottom="true"
+                    />
+
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/lvOrderList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@null"
+                android:divider="@color/transparent"
+                android:dividerHeight="6dp"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+    </com.mdj.view.RefreshableView>
+</LinearLayout>

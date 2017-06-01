@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false" >
+
+    <!-- 和背景色一样的圆形背景 -->
+
+    <solid android:color="@color/mdj_bg" />
+
+    <size
+        android:height="65dp"
+        android:width="65dp" />
+
+</shape>

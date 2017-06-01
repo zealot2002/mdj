@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdj_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/status_bar" />
+
+    <include layout="@layout/title_bar_mid" />
+	
+	<include layout="@layout/disconnect" />
+	<include layout="@layout/empty" />
+	<LinearLayout
+        android:id="@+id/llBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+    <com.mdj.view.EffectListView
+        android:id="@+id/lvBeauticianList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@color/mdj_black_line"
+        android:dividerHeight="1dp"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        app:listitem="@layout/list_item_beautician" />
+	</LinearLayout>
+</LinearLayout>

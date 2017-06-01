@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tl_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:text="北京"
+            android:textColor="@color/black"
+            android:textSize="@dimen/one_title_size" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_name"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:text="服务范围:五环以内"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/two_title_size" />
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp" >
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="15dp"
+                android:layout_height="23dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/location_oncall"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

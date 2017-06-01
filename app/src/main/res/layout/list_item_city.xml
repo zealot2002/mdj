@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" 
+    android:background="@color/white"
+    >
+
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+	        android:id="@+id/tvName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="北京"
+	        android:textColor="@color/text_black"
+	        android:textSize="@dimen/text_size_14" 
+	        />
+
+	   <TextView
+	       android:id="@+id/tvServiceScope"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:textColor="@color/text_gray"
+	       android:textSize="@dimen/text_size_12" 
+	       android:text="服务范围：五环以内"
+	       android:layout_marginTop="5dp"
+	       />
+        
+    </LinearLayout>
+    
+	<ImageView
+        android:id="@+id/ivLocation"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:scaleType="centerInside"
+        android:src="@mipmap/location_red"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+    
+</RelativeLayout>

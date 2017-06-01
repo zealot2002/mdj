@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/tvPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="套餐名称"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_12"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvValidDurationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPackageName"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="9dp"
+        android:text="使用期限:"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_size_11" />
+
+    <TextView
+        android:id="@+id/tvValidDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvValidDurationText"
+        android:layout_toRightOf="@+id/tvValidDurationText"
+        android:layout_marginLeft="5dp"
+        android:text="还有5天"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_size_11" />
+
+    <TextView
+        android:id="@+id/tvLeftTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvValidDuration"
+        android:layout_toRightOf="@+id/tvValidDuration"
+        android:layout_marginLeft="2dp"
+        android:text="剩余8次"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_size_11" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/btnSub"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/sub_icon_selector"
+            />
+        <EditText
+            android:id="@+id/etNum"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_12"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/text_black"
+            android:background="@null"
+            android:maxLength="2"
+            android:editable="false"
+            />
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/add_icon_selector"
+            />
+    </LinearLayout>
+</RelativeLayout>

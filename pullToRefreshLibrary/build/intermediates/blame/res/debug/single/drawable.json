@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/pullToRefreshLibrary/build/intermediates/res/merged/debug/drawable/vpi__tab_indicator.xml",
+        "source": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/pullToRefreshLibrary/src/main/res/drawable/vpi__tab_indicator.xml"
+    },
+    {
+        "merged": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/pullToRefreshLibrary/build/intermediates/res/merged/debug/drawable/indicator_bg_bottom.xml",
+        "source": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/pullToRefreshLibrary/src/main/res/drawable/indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/pullToRefreshLibrary/build/intermediates/res/merged/debug/drawable/indicator_bg_top.xml",
+        "source": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/pullToRefreshLibrary/src/main/res/drawable/indicator_bg_top.xml"
+    },
+    {
+        "merged": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\vpi__tab_indicator.xml",
+        "source": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable\\vpi__tab_indicator.xml"
+    },
+    {
+        "merged": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable\\indicator_bg_top.xml"
+    }
+]

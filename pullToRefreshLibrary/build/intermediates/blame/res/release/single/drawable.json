@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_top.xml",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable\\vpi__tab_indicator.xml",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable\\vpi__tab_indicator.xml"
+    },
+    {
+        "merged": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_bottom.xml",
+        "source": "C:\\work\\svn\\mdj-user\\pullToRefreshLibrary\\src\\main\\res\\drawable\\indicator_bg_bottom.xml"
+    }
+]

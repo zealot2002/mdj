@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mdj_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/status_bar" />
+
+    <com.mdj.moudle.widget.TitleWidget
+        android:id="@+id/titleWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="设置"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_round_bg"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="接收通知"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/text_size_15"/>
+
+        <ToggleButton
+            android:id="@+id/infrom"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ios7_btn"
+            android:text=""
+            android:textOff=""
+            android:textOn=""/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_round_bg"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/grade"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:background="@drawable/white_gray_selector"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="给我们打分"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black_gray"
+                android:textSize="@dimen/text_size_15"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_gray"/>
+        </RelativeLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="@dimen/mdj_pading_left"
+            android:layout_marginRight="@dimen/mdj_pading_left"
+            android:background="@color/mdj_black_line"/>
+
+        <RelativeLayout
+            android:id="@+id/common_problem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/white_gray_selector"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="常见问题解答"
+                android:textColor="@color/black_gray"
+                android:textSize="@dimen/text_size_15"/>
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/right_gray"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="@dimen/mdj_pading_left"
+            android:layout_marginRight="@dimen/mdj_pading_left"
+            android:background="@color/mdj_black_line"/>
+
+        <RelativeLayout
+            android:id="@+id/terms_service"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="服务条款"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/mdj_text_black"
+                android:textSize="@dimen/mdj_title_two"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_gray"/>
+        </RelativeLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="@dimen/mdj_pading_left"
+            android:layout_marginRight="@dimen/mdj_pading_left"
+            android:background="@color/mdj_black_line"/>
+
+        <RelativeLayout
+            android:id="@+id/promise"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:background="@drawable/white_gray_selector"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="保险承诺书"
+                android:textColor="@color/black_gray"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/text_size_15"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_gray"/>
+        </RelativeLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="@dimen/mdj_pading_left"
+            android:layout_marginRight="@dimen/mdj_pading_left"
+            android:background="@color/mdj_black_line"/>
+
+        <RelativeLayout
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:background="@drawable/white_gray_selector"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="关于我们"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black_gray"
+                android:textSize="@dimen/text_size_15"/>
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/right_gray"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/log_out"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/white_gray_selector"
+        android:text="退出登录"
+        android:layout_marginTop="6dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:textColor="@color/mdj_text_black"
+        android:textSize="@dimen/mdj_title_two"
+        />
+
+
+</LinearLayout>

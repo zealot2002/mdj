@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdj_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/status_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mdj_title_bar"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/back_margin_left"
+            android:paddingRight="@dimen/back_margin_left" >
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/arrow_left"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_project"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/rb_order"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="项目"
+                android:textColor="@color/rb_text_selector"
+                android:textSize="@dimen/mdj_title_one" />
+
+            <RadioButton
+                android:id="@+id/rb_beauty"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/rb_order"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="美容师"
+                android:textColor="@color/rb_text_selector"
+                android:textSize="@dimen/mdj_title_one" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_face"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/rb_order"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="面部美容"
+            android:textColor="@color/rb_text_selector"
+            android:textSize="@dimen/mdj_title_two" />
+
+        <RadioButton
+            android:id="@+id/rb_body"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rb_order"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="身体养护"
+            android:textColor="@color/rb_text_selector"
+            android:textSize="@dimen/mdj_title_two" />
+
+        <RadioButton
+            android:id="@+id/rb_jingluo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rb_order"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="经络调理"
+            android:textColor="@color/rb_text_selector"
+            android:textSize="@dimen/mdj_title_two" />
+
+        <RadioButton
+            android:id="@+id/rb_zuhe"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/rb_order"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="超值组合"
+            android:textColor="@color/rb_text_selector"
+            android:textSize="@dimen/mdj_title_two" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" >
+    </FrameLayout>
+
+</LinearLayout>

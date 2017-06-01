@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdj_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/status_bar" />
+
+    <include layout="@layout/title_bar_mid" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mdj_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="26dp"
+                android:text="取消原因"
+                android:textColor="@color/mdj_text_gray"
+                android:textSize="@dimen/mdj_title_three" />
+
+            <RadioGroup
+                android:id="@+id/rg_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rb_reason1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/check_cancle_reson"
+                    android:button="@null"
+                    android:checked="true"
+                    android:paddingLeft="16dp"
+                    android:text="@string/mdj_cancle_reson1"
+                    android:textColor="@color/mdj_txt_black_address"
+                    android:textSize="@dimen/mdj_title_five" />
+
+                <RadioButton
+                    android:id="@+id/rb_reason2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/check_cancle_reson"
+                    android:button="@null"
+                    android:paddingLeft="16dp"
+                    android:text="@string/mdj_cancle_reson2"
+                    android:textColor="@color/mdj_txt_black_address"
+                    android:textSize="@dimen/mdj_title_five" />
+
+                <RadioButton
+                    android:id="@+id/rb_reason3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/check_cancle_reson"
+                    android:button="@null"
+                    android:paddingLeft="16dp"
+                    android:text="@string/mdj_cancle_reson3"
+                    android:textColor="@color/mdj_txt_black_address"
+                    android:textSize="@dimen/mdj_title_five" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_else"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" >
+
+                    <EditText
+                        android:id="@+id/et_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/shape_white"
+                        android:enabled="true"
+                        android:gravity="top"
+                        android:hint="不是这些原因？那么悄悄告诉我们吧！"
+                        android:lines="10"
+                        android:maxLength="80"
+                        android:padding="6dp"
+                        android:textColor="@color/mdj_txt_black_address"
+                        android:textSize="@dimen/mdj_title_five" />
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="3dp"
+                        android:text="最多可输入80个字符"
+                        android:textColor="@color/mdj_text_gray"
+                        android:textSize="@dimen/mdj_title_five" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/red_deep_red_selector"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

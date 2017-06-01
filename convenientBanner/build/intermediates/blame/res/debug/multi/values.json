@@ -1,0 +1,172 @@
+[
+    {
+        "outputFile": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\convenientBanner\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 162,
+                    "endColumn": 40,
+                    "endOffset": 198
+                },
+                "from": {
+                    "file": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\convenientBanner\\src\\main\\res\\values\\ids.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 46,
+                        "endOffset": 97
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 203,
+                    "endColumn": 53,
+                    "endOffset": 252
+                },
+                "from": {
+                    "file": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\convenientBanner\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 19,
+                        "endColumn": 53,
+                        "endOffset": 68
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 257,
+                    "endLine": 11,
+                    "endColumn": 12,
+                    "endOffset": 543
+                },
+                "from": {
+                    "file": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\convenientBanner\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 192,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 484
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 548,
+                    "endLine": 16,
+                    "endColumn": 12,
+                    "endOffset": 821
+                },
+                "from": {
+                    "file": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/C:\\work\\svn\\mdj-user\\convenientBanner\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 525,
+                        "endLine": 19,
+                        "endColumn": 12,
+                        "endOffset": 802
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/convenientBanner/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 162,
+                    "endColumn": 40,
+                    "endOffset": 198
+                },
+                "from": {
+                    "file": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/convenientBanner/src/main/res/values/ids.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 46,
+                        "endOffset": 97
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 203,
+                    "endColumn": 53,
+                    "endOffset": 252
+                },
+                "from": {
+                    "file": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/convenientBanner/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 19,
+                        "endColumn": 53,
+                        "endOffset": 68
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 257,
+                    "endLine": 11,
+                    "endColumn": 12,
+                    "endOffset": 543
+                },
+                "from": {
+                    "file": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/convenientBanner/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 192,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 484
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 548,
+                    "endLine": 16,
+                    "endColumn": 12,
+                    "endOffset": 821
+                },
+                "from": {
+                    "file": "/Users/zhaoziying/AndroidStudioProjects/mdjtrunk/convenientBanner/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 525,
+                        "endLine": 19,
+                        "endColumn": 12,
+                        "endOffset": 802
+                    }
+                }
+            }
+        ]
+    }
+]

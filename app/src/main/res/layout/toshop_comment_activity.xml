@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mdj_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/status_bar" />
+
+    <com.mdj.moudle.widget.TitleWidget
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="评价"
+        />
+
+    <ScrollView
+        android:id="@+id/slScro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--上半部分-->
+            <LinearLayout
+                android:id="@+id/llTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_round_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="6dp"
+                    >
+
+                    <com.mdj.view.RoundImageView
+                        android:id="@+id/riBeauticianIcon"
+                        android:layout_width="79dp"
+                        android:layout_height="79dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/default_banner"
+                        >
+                    </com.mdj.view.RoundImageView>
+
+                    <TextView
+                        android:id="@+id/tvBeauticianName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/riBeauticianIcon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_toEndOf="@+id/riBeauticianIcon"
+                        android:layout_toRightOf="@+id/riBeauticianIcon"
+                        android:text="姓名"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/text_size_15"/>
+
+                    <TextView
+                        android:id="@+id/tvBeauticianShop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvBeauticianName"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/riBeauticianIcon"
+                        android:layout_toRightOf="@+id/riBeauticianIcon"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="归属体验店"
+                        android:textColor="@color/orange_yellow"
+                        android:textSize="@dimen/text_size_12"/>
+
+                    <TextView
+                        android:id="@+id/tvOrderNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvBeauticianShop"
+                        android:layout_alignStart="@+id/tvBeauticianShop"
+                        android:layout_below="@+id/tvBeauticianShop"
+                        android:layout_marginTop="14dp"
+                        android:drawableLeft="@mipmap/order_icon"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="月订单"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/text_size_12"/>
+
+                    <TextView
+                        android:id="@+id/tvFavourableComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tvOrderNumber"
+                        android:layout_marginLeft="53dp"
+                        android:layout_marginStart="53dp"
+                        android:layout_toEndOf="@+id/tvOrderNumber"
+                        android:layout_toRightOf="@+id/tvOrderNumber"
+                        android:drawableLeft="@mipmap/good_appriase_icon"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="月好评"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/text_size_12"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/mdj_txt_shawlow_gray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="评价本次服务"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_13"
+                    android:textStyle="bold"/>
+
+                <RadioGroup
+                    android:id="@+id/rgGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbGood"
+                        android:layout_width="65dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="38dp"
+                        android:background="@drawable/gray_round_btn_selector"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="好评"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_12"/>
+
+                    <RadioButton
+                        android:id="@+id/rbMedium"
+                        android:layout_width="65dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="46dp"
+                        android:layout_toRightOf="@+id/tvGood"
+                        android:background="@drawable/gray_round_btn_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="中评"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_12"/>
+
+                    <RadioButton
+                        android:id="@+id/rbRates"
+                        android:layout_width="65dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="46dp"
+                        android:layout_toRightOf="@+id/tvMedium"
+                        android:background="@drawable/gray_round_btn_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="差评"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_12"/>
+
+                </RadioGroup>
+
+
+                <com.zhy.flowlayout.TagFlowLayout
+                    android:id="@+id/tagFlowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/mdj_txt_shawlow_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="体验店评分"
+                        android:textSize="@dimen/text_size_12"/>
+
+                    <RatingBar
+                        android:id="@+id/rbRatingBar"
+                        style="@style/roomHeartBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvRatingBarDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="9dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_10"/>
+
+            </LinearLayout>
+
+            <!--下半部分-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <EditText
+                    android:id="@+id/etSuggests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/shape_white"
+                    android:focusable="false"
+                    android:gravity="top"
+                    android:hint="请输入您的意见或建议..."
+                    android:lines="6"
+                    android:padding="10dp"
+                    android:textSize="@dimen/text_size_13"/>
+
+                <TextView
+                    android:id="@+id/tvLimitNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/etSuggests"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:text="0/140"
+                    android:textColor="#cccccc"
+                    android:textSize="@dimen/text_size_13"/>
+
+                <CheckBox
+                    android:id="@+id/cbNick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etSuggests"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/cb_tiaokuan_selector"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="匿名评价"
+                    android:textColor="@color/orange_yellow"
+                    android:textSize="@dimen/text_size_12"/>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_red_deepred_selector"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_17"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:TitleWidget="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/mdj_bg"
+              android:orientation="vertical"
+    >
+    <include layout="@layout/status_bar" />
+    <com.mdj.moudle.widget.TitleWidget
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        TitleWidget:title_text="体验店"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lvProjectList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="3dp"
+            android:scrollbars="none"
+            />
+        <com.mdj.moudle.widget.TabMenuWidget
+            android:id="@+id/tabMenuLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+        <!--shopCar-->
+        <com.mdj.moudle.widget.shoppingCart.ShoppingCartWidget
+            android:id="@+id/shoppingCartWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+    </FrameLayout>
+</LinearLayout>

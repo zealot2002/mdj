@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingBottom="17dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="17dp" >
+
+        <LinearLayout
+            android:id="@+id/lls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/mdj_text_black"
+                android:textSize="@dimen/mdj_title_two" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/mdj_text_black"
+                android:textSize="@dimen/mdj_title_two" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lls"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/mdj_text_gray"
+            android:textSize="@dimen/mdj_title_six" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_alter_address"
+        android:layout_width="60dp"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/alter_address"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/alter_address" />
+    </RelativeLayout>
+
+</LinearLayout>

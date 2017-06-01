@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/mdj_status_bar_height"
+        >
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/close"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+<!--手机号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="9dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="+86"
+                android:textColor="@color/text_black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:ems="11"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="15sp"
+                android:hint="请输入手机号"
+                android:textColorHint="#cccccc"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#535353" />
+<!--验证码-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="9dp"
+            >
+            <EditText
+                android:id="@+id/etSmsCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:inputType="phone"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="15sp"
+                android:hint="请输入验证码"
+                android:textColorHint="#cccccc"
+                />
+            <Button
+                android:id="@+id/btnGetSmsCode"
+                android:layout_width="66dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/black_round_bg"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#535353" />
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="44dp"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:background="@drawable/gray_round_bg"
+            />
+        <!--协议-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="35dp"
+            >
+            <CheckBox
+                android:id="@+id/cbProtocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomCheckboxThemeLogin"
+                android:layout_gravity="center_vertical"
+                android:checked="true"
+                />
+            <TextView
+                android:id="@+id/tvProtocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="我已阅读并同意《美道家平台服务协议》"
+                android:textColor="@color/text_black"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                />
+
+        </LinearLayout>
+        <!--注册即得100元新手券-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="35dp"
+            >
+
+            <TextView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:text="1"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_black"
+                android:textSize="8sp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/circle_number_bg"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="注册即得100元新手券"
+                android:textColor="@color/text_black"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+        <!--完善“我的资料”，还可额外领取优惠券哦-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="35dp"
+            >
+
+            <TextView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:text="2"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_black"
+                android:textSize="8sp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/circle_number_bg"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="完善“我的资料”，还可额外领取优惠券哦"
+                android:textColor="@color/text_black"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion '20.0.0'
+
+    buildTypes {
+        defaultConfig {
+            applicationId "com.mdj"
+            minSdkVersion 11
+            targetSdkVersion 20
+
+            versionCode 20
+            versionName "3.0.0"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        android {}
+        anzhi {}
+        baidu {}
+        huawei {}
+        job91 {}
+        mumayi {}
+        qihu360 {}
+        tencent {}
+        wandoujia {}
+        xiaomi {}
+        yiyou {}
+
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.properties'
+    }
+    signingConfigs {
+        debug {
+            storeFile file("mdj")
+            storePassword "365vmei"
+            keyAlias "美道家"
+            keyPassword "365vmei"
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    /*依赖工程：banner */
+    compile project(':convenientBanner')
+    /*依赖工程：可伸缩listview*/
+    compile project(':slideExpandableListViewLib')
+    compile project(':Pushlib')
+    //参考https://github.com/saiwu-bigkoo/Android-ConvenientBanner/blob/master/convenientbanner/build.gradle
+    compile 'com.android.support:appcompat-v7:20.0.0'
+    compile 'com.android.support:recyclerview-v7:21.+'
+    /*xutils*/
+    compile 'com.jiechic.library:xUtils:2.6.14'
+    /*json*/
+    compile 'com.alibaba:fastjson:1.2.7'
+    /*二维码 start*/
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.0@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.0@aar'
+    /*二维码 start*/
+    /*本地lib*/
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

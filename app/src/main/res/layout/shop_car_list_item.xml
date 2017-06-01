@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" 
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvProjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/mdj_title_three" 
+            android:layout_marginTop="10dp"
+    		android:layout_marginBottom="10dp"
+    		/>
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvProjectName"
+            android:text="90分钟"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/mdj_title_six" />
+
+        <TextView
+            android:id="@+id/tvRmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvDuration"
+            android:text="@string/symbol_rmb"
+            android:textColor="@color/mdj_pink"
+            android:textSize="@dimen/mdj_title_five" />
+
+        <TextView
+            android:id="@+id/tvCurPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tvRmb"
+            android:text="222"
+            android:textColor="@color/mdj_pink"
+            android:textSize="@dimen/text_size_18" />
+
+        <!-- 加减号 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rlSub"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/minus_icon_selector"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:text="-"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_20" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/etNum"
+                android:layout_width="41dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/gray_rim"
+                android:editable="false"
+                android:gravity="center"
+                android:maxLength="2"
+                android:text="7"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <RelativeLayout
+                android:id="@+id/rlAdd"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/add_icon_selector"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="＋"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_20" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 加减号 end -->
+    </RelativeLayout>
+
+</LinearLayout>
